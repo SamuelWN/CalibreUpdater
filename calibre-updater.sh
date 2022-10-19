@@ -27,8 +27,6 @@ raise SystemExit(
 
 let EXIT_STATUS="$?"
 
-# USER_HOME=$(eval echo ~${SUDO_USER})
-# SCRIPT_DIR="${USER_HOME}/scripts/"
 SCRIPT_DIR="$(realpath "$(dirname "$0")")"
 
 if [[ "${EXIT_STATUS}" -eq 0 ]]; then
