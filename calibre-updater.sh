@@ -8,7 +8,7 @@ from calibre.constants import numeric_version;
 ctx=ssl._create_unverified_context();
 
 
-latest_version=urllib.request.urlopen('http://calibre-ebook.com/downloads/latest_version', context=ctx).read().decode(encoding = 'UTF-8')
+latest_version=urllib.request.urlopen('http://code.calibre-ebook.com/latest', context=ctx).read().decode(encoding = 'UTF-8')
 
 print('Latest version: %s, Current version: %s' % (
         latest_version,
